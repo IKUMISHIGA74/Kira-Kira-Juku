@@ -254,7 +254,8 @@
 }
 
 /* ボタン */
-@media screen and (max-width: 767px) { /* SP記述 */
+/* 幅768pxをSP仕様 */
+@media screen and (max-width: 768px) { /* SP記述 */
   .cover-btm {
   height: 150px;
   width: 100%;
@@ -266,7 +267,7 @@
   }
 }
 
-@media screen and (min-width: 768px) { /* PC記述 */
+@media screen and (min-width: 769px) { /* PC記述 */
   .cover-btm {
     width: 100%;
     display: flex;
@@ -276,7 +277,7 @@
   }
 }
 
-@media screen and (max-width: 767px) { /* SP記述 */
+@media screen and (max-width: 768px) { /* SP記述 */
   .btn-inquiry {
   padding: 12px 53px;
   border-radius: 35px;
@@ -287,7 +288,7 @@
   }
 }
 
-@media screen and (min-width: 768px) { /* PC記述 */
+@media screen and (min-width: 769px) { /* PC記述 */
   .btn-inquiry {
     padding: 20px 62px;
     border-radius: 35px;
@@ -298,7 +299,7 @@
   }
 }
 
-@media screen and (max-width: 767px) { /* SP記述 */
+@media screen and (max-width: 768px) { /* SP記述 */
   .btn-freetrial {
   padding: 12px 53px;
   border-radius: 35px;
@@ -309,7 +310,7 @@
   }
 }
 
-@media screen and (min-width: 768px) { /* PC記述 */
+@media screen and (min-width: 769px) { /* PC記述 */
   .btn-freetrial {
     padding: 20px 62px;
     border-radius: 35px;
@@ -321,7 +322,7 @@
   }
 }
 
-@media screen and (max-width: 767px) { /* SP記述 */
+@media screen and (max-width: 768px) { /* SP記述 */
   .btn-request {
     padding: 12px 77px;
     border-radius: 35px;
@@ -332,7 +333,7 @@
   }
 }
 
-@media screen and (min-width: 768px) { /* PC記述 */
+@media screen and (min-width: 769px) { /* PC記述 */
   .btn-request {
     padding: 20px 98px;
     border-radius: 35px;
