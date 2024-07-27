@@ -1,14 +1,14 @@
 $(document).ready(function () {
   if (window.matchMedia('(max-width: 767px)').matches) {
-    $('#js-hamburger-menu, .navigation__link').on('click', function () {
-      $('.navigation').slideToggle(300)
-      $('.hamburger-menu').toggleClass('hamburger-menu--open')
-      if ($(this).hasClass('navigation__link')) {
-        var target = $(this).attr('href');
-        $('html, body').animate({
-          scrollTop: $(target).offset().top
-        }, 500);
-      }
+    $('#js-hamburger-menu').on('click', function () {
+      $('.navigation').toggleClass('open');
+      $('.hamburger-menu').toggleClass('hamburger-menu--open');
+    });
+    $('.navigation__link').on('click', function () {
+      var target = $(this).attr('href');
+      $('html, body').animate({
+        scrollTop: $(target).offset().top
+      }, 500);
     });
   }
 });
