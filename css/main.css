@@ -125,7 +125,7 @@
 
 @media screen and (max-width: 767px) {
   .navigation {
-    position: fixed;
+    position: absolute;
     top: 70px;
     right: 0;
     width: 100%;
@@ -253,17 +253,169 @@
 }
 
 /* カバー */
-.cover img{ /* SP記述 */
-  width: 100%;
-  height: auto;
-}
-
-@media screen and (min-width: 768px) { /* PC記述 */
+/* SP記述 */
+@media screen and (max-width: 767px) {
   .cover img{
     width: 100%;
     height: auto;
   }
+  .frame-left img {
+    width: 6%;
+    height: auto;
+    position: absolute;
+    top : 12.5%;
+    left: 4%;
+  }
+  .cover-text-first {
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top : 13%;
+    left: 10%;
+    font-size: 2.5vw;
+  }
+  .cover-text-second {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top : 16.5%;
+    left: 14%;
+    color: #F11F8D;
+    font-size: 5vw;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .cover-text-third {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top : 15.25%;
+    left: 21.5%;
+    color: #F11F8D;
+    font-size: 8vw;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .frame-right img{
+    width: 6%;
+    height: auto;
+    position: absolute;
+    top : 12.5%;
+    left: 32.25%;
+  }
+  .cover-text-fourth {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top : 23%;
+    left: 4%;
+    font-size: 3vw;
+  }
+  .cover-text-fifth {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top : 26%;
+    left: 4%;
+    color: #005BAC;
+    font-size: 6vw;
+    font-weight: bold;
+  }
+  .cover-text-sixth {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top : 30%;
+    left: 4%;
+    color: #005BAC;
+    font-size: 6vw;
+    font-weight: bold;
+  }
 }
+
+
+
+/* カバー */
+/* PC記述 */
+@media screen and (min-width: 768px) {
+  .cover img{
+    width: 100%;
+    height: auto;
+  }
+  .frame-left img {
+    width: 2.5%;
+    height: auto;
+    position: absolute;
+    top : 20%;
+    left: 20%;
+  }
+  .cover-text-first {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top : 21%;
+    left: 24.5%;
+    font-size: 1vw;
+  }
+  .cover-text-second {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top : 27%;
+    left: 26%;
+    color: #F11F8D;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .cover-text-third {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top : 26%;
+    left: 30%;
+    color: #F11F8D;
+    font-size: 3vw;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .frame-right img{
+    width: 2.5%;
+    height: auto;
+    position: absolute;
+    top : 20%;
+    left: 35%;
+  }
+  .cover-text-fourth {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top : 38%;
+    left: 21%;
+    font-size: 1.5vw;
+  }
+  .cover-text-fifth {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top : 44%;
+    left: 21.5%;
+    color: #005BAC;
+    font-size: 2.5vw;
+    font-weight: bold;
+  }
+  .cover-text-sixth {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top : 50%;
+    left: 21.5%;
+    color: #005BAC;
+    font-size: 2.5vw;
+    font-weight: bold;
+  }
+}
+
 
 /* ボタン */
 @media screen and (max-width: 767px) { /* SP記述 */
