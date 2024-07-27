@@ -14,10 +14,10 @@
 
 @media screen and (min-width: 768px) { /* PC記述 */
   .header {
-    height: 101px;
+    height: 10vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
     box-shadow: 0px -2px 8px #00000029 inset;
@@ -33,8 +33,10 @@
 
 @media screen and (min-width: 768px) { /* PC記述 */
   .logo {
-    width: 25%;
-    margin-left: 380px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 40px;
   }
 }
 
@@ -47,8 +49,8 @@
 
 @media screen and (min-width: 768px) { /* PC記述 */
   .logo img {
-    height: 45px;
-    width: 251px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -123,14 +125,21 @@
 
 @media screen and (max-width: 767px) {
   .navigation {
-  display: none;
-  background: #005BAC;
-  position: absolute;
-  top: 50px;
-  width: 100%;
-  z-index: 9999;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: #005BAC;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999;
+  }
+  .navigation.open {
+    transform: translateX(0);
+    right: 0;
   }
 }
+
 
 @media screen and (max-width: 767px) {
   .navigation__list {
@@ -177,13 +186,15 @@
 
 @media screen and (max-width: 767px) {
   .btn-entry {
-    width: 350px;
-    height: 66px;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 0px;
+    padding: 2vh 2vw;
     margin: 32px auto;
     border-radius: 35px;
     text-decoration: none;
@@ -195,67 +206,67 @@
 
 /* ナビメニュー */
 /* PC記述 */
-
 @media screen and (min-width: 768px) {
   .navigation {
-    width: 75%;
+    list-style: none;
   }
 }
 
 @media screen and (min-width: 768px) {
   .navigation__list {
     display: flex;
+    justify-content: center;
     align-items: center;
-    list-style: none;
   }
 }
 
 @media screen and (min-width: 768px) {
   .navigation__list-item {
-    margin-right: 46px;
-    font-size: 20px;
+    margin: 0px 20px;
+    font-size: 2vh;
     color: #333333;
   }
 }
 
 @media screen and (min-width: 768px) {
   .navigation-text {
-  display: none;
+    display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
   .btn-entry {
-  width: 282px;
-  background: linear-gradient(to right, #0271E0, #53A2F0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 41px;
-  border-radius: 30px;
-  text-decoration: none;
-  color: #FFFFFF;
-  font-size: 20px;
-  font-weight: bold;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    background: linear-gradient(to right, #0271E0, #53A2F0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5vh 2vw;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
   }
 }
 
 /* カバー */
 .cover img{ /* SP記述 */
-  height: 250px;
   width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) { /* PC記述 */
   .cover img{
-    height: 651px;
     width: 100%;
+    height: auto;
   }
 }
 
 /* ボタン */
-/* 幅768pxをSP仕様 */
-@media screen and (max-width: 768px) { /* SP記述 */
+@media screen and (max-width: 767px) { /* SP記述 */
   .cover-btm {
   height: 150px;
   width: 100%;
@@ -267,7 +278,7 @@
   }
 }
 
-@media screen and (min-width: 769px) { /* PC記述 */
+@media screen and (min-width: 768px) { /* PC記述 */
   .cover-btm {
     width: 100%;
     display: flex;
@@ -277,7 +288,7 @@
   }
 }
 
-@media screen and (max-width: 768px) { /* SP記述 */
+@media screen and (max-width: 767px) { /* SP記述 */
   .btn-inquiry {
   padding: 12px 53px;
   border-radius: 35px;
@@ -288,7 +299,7 @@
   }
 }
 
-@media screen and (min-width: 769px) { /* PC記述 */
+@media screen and (min-width: 768px) { /* PC記述 */
   .btn-inquiry {
     padding: 20px 62px;
     border-radius: 35px;
@@ -299,7 +310,7 @@
   }
 }
 
-@media screen and (max-width: 768px) { /* SP記述 */
+@media screen and (max-width: 767px) { /* SP記述 */
   .btn-freetrial {
   padding: 12px 53px;
   border-radius: 35px;
@@ -310,7 +321,7 @@
   }
 }
 
-@media screen and (min-width: 769px) { /* PC記述 */
+@media screen and (min-width: 768px) { /* PC記述 */
   .btn-freetrial {
     padding: 20px 62px;
     border-radius: 35px;
@@ -322,7 +333,7 @@
   }
 }
 
-@media screen and (max-width: 768px) { /* SP記述 */
+@media screen and (max-width: 767px) { /* SP記述 */
   .btn-request {
     padding: 12px 77px;
     border-radius: 35px;
@@ -333,7 +344,7 @@
   }
 }
 
-@media screen and (min-width: 769px) { /* PC記述 */
+@media screen and (min-width: 768px) { /* PC記述 */
   .btn-request {
     padding: 20px 98px;
     border-radius: 35px;
@@ -348,7 +359,6 @@
 @media screen and (max-width: 767px) { /* SP記述 */
   .reason {
     width: 100%;
-    align-items: baseline;
   }
 }
 
@@ -408,8 +418,8 @@
 
 @media screen and (max-width: 767px) {
   .reason-box img {
-    height: 220px;
-    width: 343px;
+    width: 90%;
+    height: auto;
     margin-bottom: 10px;
   }
 }
@@ -454,23 +464,27 @@
 /* PC記述 */
 @media screen and (min-width: 768px) {
   .reason-box {
+    width: 80%;
+    height: auto;
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #0088ff;
   }
 }
 
 @media screen and (min-width: 768px) {
   .reason-box img {
-    height: 346px;
-    width: 560px;
+    width: 40%;
+    height: auto;
     margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .reason-text {
-    width: 560px;
+    width: 40%;
     display: flex;
     flex-direction: column;
   }
@@ -600,13 +614,13 @@
 @media screen and (max-width: 767px) { /* SP記述 */
   .course {
     width: 100%;
+    height: auto;
     align-items: baseline;
   }
 }
 
 @media screen and (min-width: 768px) { /* PC記述 */
   .course {
-    width: 100%;
     align-items: baseline;
   }
 }
@@ -657,31 +671,43 @@
 }
 
 @media screen and (max-width: 767px) {
+.tab-contents-wrap {
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .tab-contents {
+    width: 100%;
+    height: auto;
     background-color: #F2F9FF;
     display: none;
-    padding: 20px;
-    margin-bottom: 60px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .tab-icon {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
+    background-color: #FFA500;
   }
 }
 
 @media screen and (max-width: 767px) {
   .tab-img {
-    height: 220px;
-    width: 343px;
+    width: 90%;
+    height: auto;
     border-radius: 10px;
     overflow: hidden;
   }
   .tab-img img {
-    height: 220px;
-    width: 343px;
+    width: 90%;
+    height: auto;
     border-radius: 10px;
     margin: 0px auto;
     transition: all 0.5s ease-in-out;
