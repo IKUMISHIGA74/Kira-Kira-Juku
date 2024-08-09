@@ -915,7 +915,7 @@ body {
     height: auto;
     display: flex;
     justify-content: center;
-    margin: 20px auto;
+    margin: 15px auto;
   }
 }
 
@@ -1099,13 +1099,13 @@ body {
 @media screen and (min-width: 768px) { /* PC記述 */
   .course {
     align-items: baseline;
+    margin: 4% 0% 3% 0%;
   }
 }
 
 @media screen and (max-width: 767px) { /* SP記述 */
   .course-title {
     text-align: center;
-    margin: 60px 0px 30px 0px;
     color: #333333;
     font-size: 28px;
     font-weight: bold;
@@ -1139,12 +1139,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 19px;
+    padding: 5%;
     margin: 0px 10px;
     border-radius: 10px 10px 0px 0px;
     background-color: #F0F0F0;
     color: #33333380;
-    font-size: 4vw;
+    font-size: 1.8rem;
     font-weight: bold;
   }
 }
@@ -1154,6 +1154,7 @@ body {
   width: 100%;
   height: auto;
   display: flex;
+  padding-bottom: 18%;
   }
 }
 
@@ -1163,7 +1164,7 @@ body {
     height: auto;
     background-color: #F2F9FF;
     display: none;
-    flex-direction: column;
+    padding: 28px 0px 30px 0px;
   }
 }
 
@@ -1173,22 +1174,21 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-    margin: 20px 10%;
   }
 }
 
 @media screen and (max-width: 767px) {
   .tab-img {
-    width: 90%;
-    height: auto;
+    width: 343px;
+    height: 220px;
     border-radius: 10px;
     overflow: hidden;
+    margin: 0px auto;
   }
   .tab-img img {
-    width: 90%;
-    height: auto;
+    width: 343px;
+    height: 220px;
     border-radius: 10px;
-    margin: 0px auto;
     transition: all 0.5s ease-in-out;
   }
   .tab-img img:hover {
@@ -1203,7 +1203,7 @@ body {
     color: #333333;
     font-size: 20px;
     font-weight: bold;
-    margin: 15px 0px 30px 0px;
+    margin: 4% 0% 8% 5%;
   }
 }
 
@@ -1219,7 +1219,7 @@ body {
   .is-tab-active {
     background-color: #F2F9FF;
     color: #333333;
-    font-size: 4vw;
+    font-size: 1.8rem;
     font-weight: bold;
   }
 }
@@ -1243,16 +1243,16 @@ body {
 
 @media screen and (min-width: 768px) {
   .tab-list-item {
-    width: 30%;
+    width: 560px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3vh 3vw;
+    padding: 1.5% 3%;
     margin: 0px 1%;
     border-radius: 15px 15px 0px 0px;
     background-color: #F0F0F0;
     color: #33333380;
-    font-size: 1.5vw;
+    font-size: 2.4rem;
     font-weight: bold;
   }
 }
@@ -1263,24 +1263,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin-bottom: 3.5%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .tab-contents {
-    width: 62.15%;
-    height: auto;
+    width: 1160px;
+    height: 852px;
     background-color: #F2F9FF;
     display: none;
-    padding: 20px;
-    margin-bottom: 60px;
+    padding-top: 28px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .tab-contents-half {
     display: flex;
+    padding: 0px 20px 20px 20px;
   }
 }
 
@@ -1294,15 +1294,16 @@ body {
 
 @media screen and (min-width: 768px) {
   .tab-img {
-    width: 95%;
-    height: auto;
-    border-radius: 15px;
+    width: 532px;
+    height: 329px;
+    border-radius: 10px;
     overflow: hidden;
+    margin: 0px auto;
   }
   .tab-img img {
-    width: 95%;
-    height: auto;
-    border-radius: 15px;
+    width: 532px;
+    height: 329px;
+    border-radius: 10px;
     margin: 0px auto;
     transition: all 0.5s ease-in-out;
   }
@@ -1317,7 +1318,8 @@ body {
     color: #333333;
     font-size: 1vw;
     font-weight: bold;
-    margin: 15px 0px 30px 0px;
+    padding-left: 10px;
+    margin: 20px 0px 20px 0px;
   }
 }
 
@@ -1333,7 +1335,7 @@ body {
   .is-tab-active {
     background-color: #F2F9FF;
     color: #333333;
-    font-size: 1.5vw;
+    font-size: 2.4rem;
     font-weight: bold;
   }
 }
