@@ -10,6 +10,7 @@
         <meta property="og:url" content="http://127.0.0.1:5500/">
         <meta property="og:image" content="/Users/shigaikumi/WebsitePractice/Kira-Kira Juku/assets/image/mv_01.png">
         <meta property="site_name" content="Kira-Kira Juku">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700;1,800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"><!-- リセットCSS -->
         <link rel="stylesheet" href="css/main.css">
@@ -18,6 +19,7 @@
 
     <!-- ヘッダー -->
     <header class="header">
+        <div class="header-contents">
         <h1 class="logo">
             <img src="assets/image/logo_01.png" alt="" >
         </h1>
@@ -36,33 +38,39 @@
                 </a></li>
             </ul>
         </nav>
+    </div>
     </header>
 
 
     <!-- カバー -->
-    <picture class="cover">
-        <source srcset="assets/image/cov_01.jpg" media="(max-width: 767px)"/><!-- SP表示 -->
-        <img src="assets/image/cov_02.jpg" alt="" /><!-- PC表示 -->
-    </picture>
-
-    <!-- カバー タイトル -->
-    <div class="cover-title">
-        <picture class="frame-left">
-            <source srcset="assets/image/frame-01.png" media="(max-width: 767px)"/><!-- SP表示 -->
-            <img src="assets/image/frame-02.png" alt="" /><!-- PC表示 -->
+    <div class="cover">
+        <picture class="cover-img">
+            <source srcset="assets/image/cov_01.jpg" media="(max-width: 767px)"/><!-- SP表示 -->
+            <img src="assets/image/cov_02.jpg" alt="" /><!-- PC表示 -->
         </picture>
-        <p class="cover-text-first">難関大学の合格実績</p>
-        <p class="cover-text-second">No.</p>
-        <p class="cover-text-third">1</p>
-        <picture class="frame-right">
-            <source srcset="assets/image/frame-03.png" media="(max-width: 767px)"/><!-- SP表示 -->
-            <img src="assets/image/frame-04.png" alt="" /><!-- PC表示 -->
-        </picture>
-        <p class="cover-text-fourth">現役高校生・高卒生</p>
-        <p class="cover-text-fifth">入学説明会の</p>
-        <p class="cover-text-sixth">お申し込み開始</p>
+        <!-- カバー タイトル -->
+        <div class="cover-title">
+            <div class="cover-title-top">
+                <picture class="frame-left">
+                    <source srcset="assets/image/frame-01.png" media="(max-width: 767px)"/><!-- SP表示 -->
+                    <img src="assets/image/frame-02.png" alt="" /><!-- PC表示 -->
+                </picture>
+                <div class="cover-title-p">
+                    <p class="cover-text-first">難関大学の合格実績</p>
+                    <p class="cover-text-second">No.<span class="cover-text-third">1</span></p>
+                </div>
+                <picture class="frame-right">
+                    <source srcset="assets/image/frame-03.png" media="(max-width: 767px)"/><!-- SP表示 -->
+                    <img src="assets/image/frame-04.png" alt="" /><!-- PC表示 -->
+                </picture>
+            </div>
+            <div class="cover-title-bottom">
+                <p class="cover-text-fourth">現役高校生・高卒生</p>
+                <p class="cover-text-fifth">入学説明会の</p>
+                <p class="cover-text-sixth">お申し込み開始</p>
+            </div>
+        </div>
     </div>
-
     <!-- ボタン -->
     <div class="cover-btm">
         <div class="inquiry">
@@ -75,6 +83,7 @@
             <a class="btn btn-primary btn-request" href="/request" role="button">資料請求する</a>
         </div>
     </div>
+
 
     <!-- 選ばれる３つの理由 -->
     <div class="reason"><a id="reason"></a>
@@ -250,13 +259,19 @@
         <!-- 質問・検索 -->
         <div class="faq-search">
             <div class="faq-search-box"><a href="/fap">
-                <img src="assets/image/faq-search_01.jpg" alt="">
-                <p>よくあるご質問</p></a>
-            </div>
+                <picture>
+                    <source srcset="assets/image/faq_01.jpg" media="(max-width: 767px)"/><!-- SP表示 -->
+                    <img src="assets/image/faq_02.jpg" alt="" /><!-- PC表示 -->
+                </picture>
+                <p>よくあるご質問</p>
+            </a></div>
             <div class="faq-search-box"><a href="/search">
-                <img src="assets/image/faq-search_02.jpg" alt="">
-                <p>お近くの教室を探す</p></a>
-            </div>
+                <picture>
+                    <source srcset="assets/image/search_01.jpg" media="(max-width: 767px)"/><!-- SP表示 -->
+                    <img src="assets/image/search_02.jpg" alt="" /><!-- PC表示 -->
+                </picture>
+                <p>お近くの教室を探す</p>
+            </a></div>
         </div>
 
     <!-- フッター -->
