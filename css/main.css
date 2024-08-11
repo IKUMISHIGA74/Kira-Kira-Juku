@@ -1535,9 +1535,9 @@ body {
   .faq-search-box p {
     position: absolute;
     top: 45%;
-    left: 10%;
+    left: 5%;
     color: #FFFFFF;
-    font-size: 3vh;
+    font-size: 2.2rem;
     font-weight: bold;
   }
 }
@@ -1577,10 +1577,21 @@ body {
 }
 
 @media screen and (min-width: 1080px) {
-  .faq-search-box p {
+  .fap-text {
     position: absolute;
     top: 45%;
     left: 38%;
+    color: #FFFFFF;
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .search-text {
+    position: absolute;
+    top: 45%;
+    left: 35%;
     color: #FFFFFF;
     font-size: 3.2rem;
     font-weight: bold;
