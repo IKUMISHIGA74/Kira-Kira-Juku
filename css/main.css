@@ -286,6 +286,9 @@ body {
 /* カバー */
 /* SP記述 */
 @media screen and (max-width: 767px) {
+  .cover {
+    position: relative;
+  }
   .cover-img img {
     width: 100%;
     height: auto;
@@ -380,13 +383,15 @@ body {
 /* カバー */
 /* TB記述 */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .cover {
+    position: relative;
+  }
   .cover-img img {
     width: 100%;
     height: 100%;
     position: absolute;
     object-fit: cover;
     object-position: center;
-    max-height: 600px;
   }
   .cover-title { 
     max-width: 1200px;
@@ -462,6 +467,9 @@ body {
 /* カバー */
 /* PC記述 */
 @media screen and (min-width: 1025px) and (max-width: 1919px) {
+  .cover {
+    position: relative;
+  }
   .cover-img img {
     width: 100%;
     height: auto;
@@ -546,6 +554,9 @@ body {
 }
 
 @media screen and (min-width: 1920px) {
+  .cover {
+    position: relative;
+  }
   .cover-img img {
     width: 100%;
     height: auto;
@@ -809,8 +820,9 @@ body {
   .reason {
     width: 100%;
     height: auto;
-    margin-bottom: 2%;
+    margin-bottom: 3.5%;
     align-items: baseline;
+    padding: 0 10px;
   }
 }
 
@@ -911,7 +923,7 @@ body {
 /* PC記述 */
 @media screen and (min-width: 768px) {
   .reason-box {
-    width: 80%;
+    max-width: 1200px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -921,7 +933,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .reason-box img {
-    width: 37%;
+    width: 47%;
     height: 20%;
     margin-bottom: 2%;
   }
@@ -929,7 +941,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .reason-text {
-    width: 40%;
+    width: 52%;
     display: flex;
     flex-direction: column;
   }
@@ -1026,8 +1038,10 @@ body {
 @media screen and (max-width: 767px) { 
   .banner-text {
     text-align: center;
-    margin: 0px 45px 20px 45px;
+    margin: 0px 40px;
+    padding-bottom: 12px;
     color: #333333;
+    line-height: 1.7;
     font-size: 16px;
   }
 }
@@ -1039,7 +1053,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 53px 20px 52px;
+    padding: 25px 53px 25px 52px;
     border-radius: 35px;
     text-decoration: none;
     color: #FFFFFF;
@@ -1093,13 +1107,17 @@ body {
     width: 100%;
     height: auto;
     align-items: baseline;
+    margin-bottom: 70px;
   }
 }
 
 @media screen and (min-width: 768px) { /* PC記述 */
   .course {
+    width: 100%;
+    height: auto;
     align-items: baseline;
-    margin: 4% 0% 3% 0%;
+    padding: 0 10px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1109,13 +1127,15 @@ body {
     color: #333333;
     font-size: 28px;
     font-weight: bold;
+    margin: 68px 0px 30px 0px;
   }
 }
 
 @media screen and (min-width: 768px) { /* PC記述 */
   .course-title {
+    width: 100%;
+    margin: 77px 0px 37px 0px;
     text-align: center;
-    margin: 60px 0px 30px 0px;
     color: #333333;
     font-size: 36px;
     font-weight: bold;
@@ -1126,21 +1146,18 @@ body {
 /* SP記述 */
 @media screen and (max-width: 767px) {
   .tab-list {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
   }
 }
 
 @media screen and (max-width: 767px) {
   .tab-list-item {
-    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5%;
-    margin: 0px 10px;
+    padding: 5% 4.5%;
     border-radius: 10px 10px 0px 0px;
     background-color: #F0F0F0;
     color: #33333380;
@@ -1151,20 +1168,18 @@ body {
 
 @media screen and (max-width: 767px) {
 .tab-contents-wrap {
-  width: 100%;
   height: auto;
   display: flex;
-  padding-bottom: 18%;
+  background-color: #F2F9FF;
+  padding-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .tab-contents {
-    width: 100%;
-    height: auto;
-    background-color: #F2F9FF;
+    max-width: 375px;
+    margin: 27px auto 0px auto;
     display: none;
-    padding: 28px 0px 30px 0px;
   }
 }
 
@@ -1201,9 +1216,9 @@ body {
 @media screen and (max-width: 767px) {
   .tab-text {
     color: #333333;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
-    margin: 4% 0% 8% 5%;
+    margin: 5% 0 8% 0;
   }
 }
 
@@ -1234,21 +1249,22 @@ body {
 /* PC記述 */
 @media screen and (min-width: 768px) {
   .tab-list {
-    width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 3%;
+    margin: 0px auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .tab-list-item {
-    width: 560px;
+    width: 47%;
+    padding: 2% 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5% 3%;
-    margin: 0px 1%;
     border-radius: 15px 15px 0px 0px;
     background-color: #F0F0F0;
     color: #33333380;
@@ -1259,34 +1275,33 @@ body {
 
 @media screen and (min-width: 768px) {
   .tab-contents-wrap {
-    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 3.5%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .tab-contents {
-    width: 1160px;
-    height: 852px;
+    width: 97%;
     background-color: #F2F9FF;
     display: none;
-    padding-top: 28px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .tab-contents-half {
     display: flex;
-    padding: 0px 20px 20px 20px;
+    justify-content: center;
+    gap: 3%;
+    margin: 2.5% 0% 3.5% 0%;
+    padding: 0% 3%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .tab-icon {
-    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -1294,17 +1309,13 @@ body {
 
 @media screen and (min-width: 768px) {
   .tab-img {
-    width: 532px;
-    height: 329px;
+    width: 100%;
     border-radius: 10px;
     overflow: hidden;
-    margin: 0px auto;
   }
   .tab-img img {
-    width: 532px;
-    height: 329px;
+    width: 100%;
     border-radius: 10px;
-    margin: 0px auto;
     transition: all 0.5s ease-in-out;
   }
   .tab-img img:hover {
@@ -1316,17 +1327,16 @@ body {
 @media screen and (min-width: 768px) {
   .tab-text {
     color: #333333;
-    font-size: 1vw;
+    font-size: 2rem;
     font-weight: bold;
-    padding-left: 10px;
-    margin: 20px 0px 20px 0px;
+    margin-top: 4%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .tab-blue {
     color: #005BAC;
-    font-size: 1vw;
+    font-size: 2rem;
     font-weight: bold;
   }
 }
@@ -1350,7 +1360,7 @@ body {
 @media screen and (max-width: 767px) { /* SP記述 */
   .cost-title {
     text-align: center;
-    margin: 60px 0px 30px 0px;
+    margin: 68px 0px 20px 0px;
     color: #333333;
     font-size: 28px;
     font-weight: bold;
@@ -1360,7 +1370,7 @@ body {
 @media screen and (min-width: 768px) { /* PC記述 */
   .cost-title {
     text-align: center;
-    margin: 60px 0px 20px 0px;
+    margin: 75px 0px 25px 0px;
     color: #333333;
     font-size: 36px;
     font-weight: bold;
@@ -1377,7 +1387,7 @@ body {
     justify-content: center;
     align-items: center;
     border-collapse: collapse;
-    margin: 50px auto 100px auto;
+    margin-bottom: 18%;
   }
   table {
     border: solid 2px #CCCCCC;
@@ -1392,18 +1402,18 @@ body {
     font-weight: normal;
     text-align: center;
     vertical-align: middle;
-    padding: 20px 30px;
+    padding: 22px 30px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .cost-box td {
     color: #333333;
-    font-size: 16px;
+    font-size: 1.6rem;
     text-align: center;
     vertical-align: middle;
     border: solid 1px #CCCCCC;
-    padding: 20px 30px;
+    padding: 15px 30px;
   }
 }
 
