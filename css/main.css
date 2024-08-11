@@ -136,8 +136,12 @@ body {
 
 @media screen and (max-width: 1079px) {
   .navigation__list-item {
-  border-bottom: solid 1px #FFFFFF80;
-  margin: 0 5%; 
+    border-bottom: solid 1px #FFFFFF80;
+    margin: 0 5%; 
+    transition: all 0.5s ease-in-out;
+  }
+  .navigation__list-item:hover {
+    opacity: 0.4; 
   }
 }
 
@@ -180,6 +184,10 @@ body {
     color: #005BAC;
     font-size: 1.8rem;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn-entry:hover {
+    opacity: 0.4; 
   }
 }
 
@@ -197,6 +205,10 @@ body {
     color: #005BAC;
     font-size: 1.8rem;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn-entry:hover {
+    opacity: 0.4; 
   }
 }
 
@@ -258,8 +270,13 @@ body {
   .navigation__list-item {
     font-size: 2rem;
     color: #333333;
+    transition: all 0.5s ease-in-out;
+  }
+  .navigation__list-item:hover {
+    opacity: 0.4; 
   }
 }
+
 
 @media screen and (min-width: 1080px) {
   .navigation-text {
@@ -280,6 +297,10 @@ body {
     color: #FFFFFF;
     font-size: 2rem;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn-entry:hover {
+    opacity: 0.4; 
   }
 }
 
@@ -686,6 +707,10 @@ body {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn-inquiry:hover {
+    opacity: 0.4; 
   }
 }
 
@@ -697,6 +722,10 @@ body {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn-freetrial:hover {
+    opacity: 0.4; 
   }
 }
 
@@ -708,6 +737,10 @@ body {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn-request:hover {
+    opacity: 0.4; 
   }
 }
 
@@ -738,6 +771,10 @@ body {
     padding: 1.3rem 4.1rem;
     font-size: 1.6rem;
     font-weight: bold;;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn-inquiry:hover {
+    opacity: 0.4; 
   }
 }
 
@@ -749,6 +786,10 @@ body {
     padding: 1.3rem 4.1rem;
     font-size: 1.6rem;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn-freetrial:hover {
+    opacity: 0.4; 
   }
 }
 
@@ -760,6 +801,10 @@ body {
     padding: 1.3rem 6.5rem;
     font-size: 1.6rem;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn-request:hover {
+    opacity: 0.4; 
   }
 }
 
@@ -784,6 +829,10 @@ body {
     padding: 2rem 6.2rem;
     font-size: 2.4rem;
     font-weight: bold;;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn-inquiry:hover {
+    opacity: 0.4; 
   }
 }
 
@@ -795,6 +844,10 @@ body {
     padding: 2rem 6.2rem;
     font-size: 2.4rem;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn-freetrial:hover {
+    opacity: 0.4; 
   }
 }
 
@@ -806,6 +859,10 @@ body {
     padding: 2rem 9.8rem;
     font-size: 2.4rem;
     font-weight: bold;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn-request:hover {
+    opacity: 0.4; 
   }
 }
 
