@@ -27,11 +27,11 @@ $(document).ready(function () {
 
 
 $(function(){
-    $('.tab-list-item').on('click', function(){
-        let index = $('.tab-list-item').index(this);
-        $('.tab-list-item').removeClass('is-tab-active');
+    $('.tab__list--item').on('click', function(){
+        let index = $('.tab__list--item').index(this);
+        $('.tab__list--item').removeClass('is-tab-active');
         $(this).addClass('is-tab-active');
-        $('.tab-contents').removeClass('is-contents-active');
-        $('.tab-contents').eq(index).addClass('is-contents-active');
+        $('.tab__contents').removeClass('is-contents-active');
+        $('.tab__contents').eq(index).addClass('is-contents-active');
     });
 }); 

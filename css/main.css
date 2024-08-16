@@ -16,11 +16,11 @@ body {
         width: 100%;
         background-color: #FFFFFF;
         box-shadow: 0px -2px 8px #00000029 inset;
-        position: sticky;
+        position: fixed;
         top: 0;
         z-index: 1000;
     }
-    .header-contents {
+    .header__contents {
         height: 70px;
         width: 100%;
         display: flex;
@@ -29,12 +29,11 @@ body {
         position: relative;
     }
     .logo {
-        width: 100%;
         margin-left: 16px;
+        transition: all 0.5s ease-in-out;
     }
-    .logo img {
-        height: 34px;
-        width: 166px;
+    .logo:hover {
+        opacity: 0.4; 
     }
 }
 
@@ -136,24 +135,24 @@ body {
 }
 
 @media screen and (max-width: 1079px) {
-    .navigation__list-item {
+    .navigation__list--item {
         border-bottom: solid 1px #FFFFFF80;
         margin: 0 5%; 
         transition: all 0.5s ease-in-out;
     }
-    .navigation__list-item:hover {
+    .navigation__list--item:hover {
         opacity: 0.4; 
     }
 }
 
 @media screen and (max-width: 1079px) {
-    .navigation__list-item:first-child {
+    .navigation__list--item:first-child {
         border-top: solid 1px #005BAC;
     }
 }
 
 @media screen and (max-width: 1079px) {
-    .navigation-text {
+    .navigation__text {
         color: #ffffff;
         font-size: 1.8rem;
         text-decoration: none;
@@ -225,7 +224,7 @@ body {
         top: 0;
         z-index: 1000;
     }
-    .header-contents {
+    .header__contents {
         max-width: 1200px;
         height: 101px;
         display: flex;
@@ -237,16 +236,11 @@ body {
 
 @media screen and (min-width: 1080px) {
     .logo {
-        height: 45px;
-        width: 241px;
+        margin-left: 19px;
+        transition: all 0.5s ease-in-out;
     }
-}
-
-@media screen and (min-width: 1080px) {
-    .logo img {
-        width: 241px;
-        height: 45px;
-        margin-left: 25px;
+    .logo:hover {
+        opacity: 0.4; 
     }
 }
 
@@ -262,25 +256,29 @@ body {
     .navigation__list {
         display: flex;
         align-items: center;
-        gap: 48px;
+        gap: 50px;
         padding-right: 22px;
     }
 }
 
 @media screen and (min-width: 1080px) {
-    .navigation__list-item {
+    .navigation__list--item {
         font-size: 2rem;
         color: #333333;
         transition: all 0.5s ease-in-out;
     }
-    .navigation__list-item:hover {
+    .navigation__list--item:hover {
         opacity: 0.4; 
     }
 }
-
+@media screen and (min-width: 1080px) {
+    .navigation__link{
+        letter-spacing: -0.5px;
+    }
+}
 
 @media screen and (min-width: 1080px) {
-    .navigation-text {
+    .navigation__text {
         display: none;
     }
 }
@@ -310,8 +308,9 @@ body {
 @media screen and (max-width: 767px) {
     .cover {
         position: relative;
+        margin-top: 70px;
     }
-    .cover-img img {
+    .cover__img img {
         width: 100%;
         height: auto;
         position: absolute;
@@ -319,7 +318,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .cover-title {
+    .cover__title {
         max-width: 100%;
         height: auto;
         margin-left: 4.5%;
@@ -329,7 +328,7 @@ body {
         right: 0;
         padding-top: 9%;
     }
-    .cover-title-top {
+    .cover__title--top {
         height: 69px;
         width: 147px;
         display: flex;
@@ -342,19 +341,19 @@ body {
         width: 24px;
         height: 69px;
     }
-    .cover-title-p {
+    .cover__title--p {
         height: 67px;
         width: 99px;
         display: flex;
         flex-direction: column;
     }
-    .cover-text-first {
+    .cover__text-first {
         width: 99px;
         height: 16px;
         font-size: 1.1rem;
         padding-top: 5px;
     }
-    .cover-text-second {
+    .cover__text-second {
         width: 56px;
         height: 51px;
         padding: 5px 0px 0px 22px;
@@ -363,7 +362,7 @@ body {
         font-weight: bold;
         font-style: italic;
     }
-    .cover-text-third {
+    .cover__text-third {
         width: 10%;
         height: auto;
         color: #F11F8D;
@@ -378,13 +377,13 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .cover-text-fourth {
+    .cover__text-fourth {
         width: 175px;
         height: auto;
         font-size: 1.4rem;
         padding-top: 6.5%;
     }
-    .cover-text-fifth {
+    .cover__text-fifth {
         width: 175px;
         height: auto;
         color: #005BAC;
@@ -392,7 +391,7 @@ body {
         font-weight: bold;
         padding-top: 2.5%;
     }
-    .cover-text-sixth {
+    .cover__text-sixth {
         width: 175px;
         height: auto;
         color: #005BAC;
@@ -407,15 +406,16 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .cover {
         position: relative;
+        margin-top: 70px;
     }
-    .cover-img img {
+    .cover__img img {
         width: 100%;
         height: 100%;
         position: absolute;
         object-fit: cover;
         object-position: center;
     }
-    .cover-title { 
+    .cover__title { 
         max-width: 1200px;
         height: auto;
         margin: auto;
@@ -425,7 +425,7 @@ body {
         right: 0;
         padding: 104px 0px 0px 57px;
     }
-    .cover-title-top {
+    .cover__title--top {
         height: 150px;
         width: 325px;
         display: flex;
@@ -435,19 +435,19 @@ body {
         width: 53px;
         height: 150px;
     }
-    .cover-title-p {
+    .cover__title--p {
         height: 133px;
         width: 180px;
         display: flex;
         flex-direction: column;
     }
-    .cover-text-first {
+    .cover__text-first {
         width: 180px;
         height: 29px;
         font-size: 2rem;
         padding-top: 14px;
     }
-    .cover-text-second {
+    .cover__text-second {
         width: 180px;
         height: 104px;
         padding: 20px 0px 0px 37px;
@@ -456,7 +456,7 @@ body {
         font-weight: bold;
         font-style: italic;
     }
-    .cover-text-third {
+    .cover__text-third {
         width: 10%;
         height: auto;
         color: #F11F8D;
@@ -468,17 +468,17 @@ body {
         width: 53px;
         height: 150px;
     }
-    .cover-text-fourth {
+    .cover__text-fourth {
         font-size: 3.3rem;
         padding-top: 40px;
     }
-    .cover-text-fifth {
+    .cover__text-fifth {
         color: #005BAC;
         font-size: 6rem;
         font-weight: bold;
         padding-top: 22px;
     }
-    .cover-text-sixth {
+    .cover__text-sixth {
         color: #005BAC;
         font-size: 6rem;
         font-weight: bold;
@@ -493,13 +493,13 @@ body {
     .cover {
         position: relative;
     }
-    .cover-img img {
+    .cover__img img {
         width: 100%;
         height: auto;
         max-height: 450px;
         position: absolute;
     }
-    .cover-title { 
+    .cover__title { 
         max-width: 800px;
         height: auto;
         margin: auto;
@@ -509,7 +509,7 @@ body {
         right: 0;
         padding: 69px 0px 0px 33px;
     }
-    .cover-title-top {
+    .cover__title--top {
         height: 100px;
         width: 217px;
         display: flex;
@@ -519,19 +519,19 @@ body {
         width: 35px;
         height: 100px;
     }
-    .cover-title-p {
+    .cover__title--p {
         height: 89px;
         width: 120px;
         display: flex;
         flex-direction: column;
     }
-    .cover-text-first {
+    .cover__text-first {
         width: 120px;
         height: 19px;
         font-size: 1.3rem;
         padding-top: 9px;
     }
-    .cover-text-second {
+    .cover__text-second {
         width: 120px;
         height: 69px;
         padding: 13px 0px 0px 25px;
@@ -540,7 +540,7 @@ body {
         font-weight: bold;
         font-style: italic;
     }
-    .cover-text-third {
+    .cover__text-third {
         width: 10%;
         height: auto;
         color: #F11F8D;
@@ -552,13 +552,13 @@ body {
         width: 35px;
         height: 100px;
     }
-    .cover-text-fourth {
+    .cover__text-fourth {
         width: 35%;
         height: auto;
         font-size: 2.2rem;
         padding-top: 27px;
     }
-    .cover-text-fifth {
+    .cover__text-fifth {
         width: 50%;
         height: auto;
         color: #005BAC;
@@ -566,7 +566,7 @@ body {
         font-weight: bold;
         padding-top: 17px;
     }
-    .cover-text-sixth {
+    .cover__text-sixth {
         width: 50%;
         height: auto;
         color: #005BAC;
@@ -581,12 +581,12 @@ body {
     .cover {
         position: relative;
     }
-    .cover-img img {
+    .cover__img img {
         width: 100%;
         height: auto;
         position: absolute;
     }
-    .cover-title { 
+    .cover__title { 
         max-width: 1200px;
         height: auto;
         margin: auto;
@@ -596,7 +596,7 @@ body {
         right: 0;
         padding: 104px 0px 0px 50px;
     }
-    .cover-title-top {
+    .cover__title--top {
         height: 150px;
         width: 325px;
         display: flex;
@@ -606,19 +606,19 @@ body {
         width: 53px;
         height: 150px;
     }
-    .cover-title-p {
+    .cover__title--p {
         height: 133px;
         width: 180px;
         display: flex;
         flex-direction: column;
     }
-    .cover-text-first {
+    .cover__text-first {
         width: 180px;
         height: 29px;
         font-size: 2rem;
         padding-top: 14px;
     }
-    .cover-text-second {
+    .cover__text-second {
         width: 180px;
         height: 104px;
         padding: 20px 0px 0px 37px;
@@ -627,7 +627,7 @@ body {
         font-weight: bold;
         font-style: italic;
     }
-    .cover-text-third {
+    .cover__text-third {
         width: 10%;
         height: auto;
         color: #F11F8D;
@@ -639,13 +639,13 @@ body {
         width: 53px;
         height: 150px;
     }
-    .cover-text-fourth {
+    .cover__text-fourth {
         width: 35%;
         height: auto;
         font-size: 3.3rem;
         padding-top: 40px;
     }
-    .cover-text-fifth {
+    .cover__text-fifth {
         width: 50%;
         height: auto;
         color: #005BAC;
@@ -653,7 +653,7 @@ body {
         font-weight: bold;
         padding-top: 22px;
     }
-    .cover-text-sixth {
+    .cover__text-sixth {
         width: 50%;
         height: auto;
         color: #005BAC;
@@ -666,7 +666,7 @@ body {
 /* ボタン */
 /* SP記述 1024px以下 */
 @media screen and (max-width: 1024px) {
-    .cover-btn {
+    .cover__btn {
         height: 185px;
         width: 100%;
         display: flex;
@@ -678,22 +678,22 @@ body {
     }
 }
 @media screen and (min-width: 300px) and (max-width: 399px){
-    .cover-btn {
+    .cover__btn {
         margin-top: 14%;
     }
 }
 @media screen and (min-width: 400px) and (max-width: 499px){
-    .cover-btn {
+    .cover__btn {
         margin-top: 20%;
     }
 }
 @media screen and (min-width: 500px) and (max-width: 767px){
-    .cover-btn {
+    .cover__btn {
         margin-top: 25%;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px){
-    .cover-btn {
+    .cover__btn {
         margin-top: 14%;
     }
 }
@@ -746,7 +746,7 @@ body {
 /* ボタン */
 /* PC記述 1025px以上 */
 @media screen and (min-width: 1025px) { 
-    .cover-btn {
+    .cover__btn {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -756,17 +756,17 @@ body {
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1919px) {
-    .cover-btn {
+    .cover__btn {
         margin-top: 7%;
     }
 }
 @media screen and (min-width: 1920px) {
-    .cover-btn {
+    .cover__btn {
         margin-top: 7%;
     }
 }
 @media screen and (min-width: 2560px) {
-    .cover-btn {
+    .cover__btn {
         margin-top: 14%;
     }
 }
@@ -872,7 +872,7 @@ body {
 }
 
 @media screen and (max-width: 767px) { 
-    .reason-title {
+    .reason__title {
         margin-bottom: 24px;
         text-align: center;
         color: #333333;
@@ -892,7 +892,7 @@ body {
 /* 選ばれる３つの理由 コンテンツ */
 /* SP記述 */
 @media screen and (max-width: 767px) {
-    .reason-box {
+    .reason__box, .reason__box-reverse {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -903,7 +903,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .reason-box img {
+    .reason__box img, .reason__box-reverse img {
         width: 343px;
         height: 220px;
         margin-bottom: 13px;
@@ -911,7 +911,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .reason-text-first, .reason-text-fourth {
+    .reason__text-first, .reason__text-fourth {
         color: #F11F8D;
         font-size: 24px;
         font-weight: bold;
@@ -929,7 +929,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .reason-text-second, .reason-text-fifth {
+    .reason__text-second, .reason__text-fifth {
         color: #333333;
         font-size: 20px;
         font-weight: bold;
@@ -938,12 +938,12 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .reason-text-third, .reason-text-sixth {
-    color: #333333;
-    font-size: 16px;
-    line-height: 1.7;
-    margin: 0px 16px 16px 16px;
-  }
+    .reason__text-third, .reason__text-sixth {
+        color: #333333;
+        font-size: 16px;
+        line-height: 1.7;
+        margin: 0px 16px 16px 16px;
+    }
 }
 
 /* 選ばれる３つの理由 タイトル*/
@@ -952,14 +952,14 @@ body {
     .reason {
         width: 100%;
         height: auto;
-        margin-bottom: 3.5%;
+        margin-bottom: 3.75%;
         align-items: baseline;
         padding: 0 10px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .reason-title {
+    .reason__title {
         text-align: center;
         color: #333333;
         font-size: 36px;
@@ -979,25 +979,33 @@ body {
 /* 選ばれる３つの理由 コンテンツ */
 /* PC記述 */
 @media screen and (min-width: 768px) {
-    .reason-box {
+    .reason__box, .reason__box-reverse {
         max-width: 1200px;
         height: auto;
         display: flex;
         justify-content: center;
-        margin: 15px auto;
+        margin: 20px auto;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .reason-box img {
+    .reason__box img {
         width: 47%;
-        height: 20%;
+        height: 19%;
+        margin-top: 0.5%;
+        margin-left: 1.75%;
+    }
+    .reason__box-reverse img {
+        width: 47%;
+        height: 19%;
+        margin-top: 2.25%;
+        margin-right: 1.5%;
         margin-bottom: 2%;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .reason-text {
+    .reason__text {
         width: 52%;
         display: flex;
         flex-direction: column;
@@ -1011,12 +1019,12 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .reason-text-first {
+    .reason__text-first {
         color: #F11F8D;
         font-size: 28px;
         font-weight: bold;
         font-style: italic;
-        padding: 2% 0% 0% 8%;
+        padding: 2% 0% 0% 6.5%;
     }
 }
 
@@ -1029,50 +1037,54 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .reason-text-second {
+    .reason__text-second {
+        max-width: 600px;
         color: #333333;
         font-size: 24px;
         font-weight: bold;
-        padding-left: 8%;
-        line-height: 1.7;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .reason-text-third {
-        color: #333333;
-        font-size: 16px;
+        padding-left: 6.5%;
         line-height: 1.8;
-        padding: 3% 0% 0% 8%;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .reason-text-fourth {
+    .reason__text-third {
+        max-width: 600px;
+        color: #333333;
+        font-size: 1.6rem;
+        line-height: 1.7;
+        padding: 2.5% 0% 0% 6.5%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .reason__text-fourth {
         color: #F11F8D;
         font-size: 28px;
         font-weight: bold;
         font-style: italic;
-        padding: 1.5% 0% 0% 1%;
+        padding: 5.5% 0% 0% 3.5%;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .reason-text-fifth {
+    .reason__text-fifth {
+        max-width: 610px;
         color: #333333;
         font-size: 24px;
         font-weight: bold;
-        padding: 1.5% 5% 0% 1.5%;
-        line-height: 1.7;
+        padding: 0.5% 5% 0% 3%;
+        line-height: 1.75;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .reason-text-sixth {
+    .reason__text-sixth {
+        max-width: 620px;
         color: #333333;
         font-size: 16px;
         line-height: 1.8;
-        padding: 1.5% 7% 0% 1.5%;
+        padding: 2% 7% 0% 3%;
     }
 }
 
@@ -1091,7 +1103,7 @@ body {
 }
 
 @media screen and (max-width: 767px) { 
-    .banner-text {
+    .banner__text {
         text-align: center;
         margin: 0px 40px;
         padding-bottom: 12px;
@@ -1136,7 +1148,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .banner-text {
+    .banner__text {
         text-align: center;
         color: #333333;
         font-size: 16px;
@@ -1165,47 +1177,6 @@ body {
 }
 
 /* コース・目的 タイトル */
-@media screen and (max-width: 767px) { /* SP記述 */
-    .course {
-        width: 100%;
-        height: auto;
-        align-items: baseline;
-        margin-bottom: 70px;
-    }
-}
-
-@media screen and (min-width: 768px) { /* PC記述 */
-    .course {
-        width: 100%;
-      height: auto;
-        align-items: baseline;
-        padding: 0 10px;
-        margin-bottom: 70px;
-    }
-}
-
-@media screen and (max-width: 767px) { /* SP記述 */
-    .course-title {
-        text-align: center;
-        color: #333333;
-        font-size: 28px;
-        font-weight: bold;
-        margin: 68px 0px 30px 0px;
-    }
-}
-
-@media screen and (min-width: 768px) { /* PC記述 */
-    .course-title {
-        width: 100%;
-        margin: 77px 0px 37px 0px;
-        text-align: center;
-        color: #333333;
-        font-size: 36px;
-        font-weight: bold;
-    }
-}
-
-/* コース・目的 タイトル */
 /* SP記述 */
 @media screen and (max-width: 767px) {
     .course {
@@ -1217,7 +1188,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .course-title {
+    .course__title {
         text-align: center;
         color: #333333;
         font-size: 28px;
@@ -1229,7 +1200,7 @@ body {
 /* コース・目的 コンテンツ */
 /* SP記述 */
 @media screen and (max-width: 767px) {
-    .tab-list {
+    .tab__list {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1237,7 +1208,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .tab-list-item {
+    .tab__list--item {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1251,7 +1222,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .tab-contents-wrap {
+    .tab__contents--wrap {
         height: auto;
         display: flex;
         background-color: #F2F9FF;
@@ -1260,7 +1231,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .tab-contents {
+    .tab__contents {
         max-width: 375px;
         margin: 27px auto 0px auto;
         display: none;
@@ -1268,7 +1239,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .tab-icon {
+    .tab__icon {
         width: 100%;
         height: auto;
         display: flex;
@@ -1277,20 +1248,20 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .tab-img {
+    .tab__img {
         width: 343px;
         height: 220px;
         border-radius: 10px;
         overflow: hidden;
         margin: 0px auto;
     }
-    .tab-img img {
+    .tab__img img {
         width: 343px;
         height: 220px;
         border-radius: 10px;
         transition: all 0.5s ease-in-out;
     }
-    .tab-img img:hover {
+    .tab__img img:hover {
         transform: scale(1.2);
         opacity: 0.4;
     }
@@ -1298,11 +1269,15 @@ body {
 
 
 @media screen and (max-width: 767px) {
-    .tab-text {
+    .tab__text {
         color: #333333;
         font-size: 2rem;
         font-weight: bold;
         margin: 5% 0 8% 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .tab__text:hover {
+        opacity: 0.4; 
     }
 }
 
@@ -1332,17 +1307,6 @@ body {
 /* コース・目的 タイトル */
 /* PC記述 */
 @media screen and (min-width: 768px) {
-    .course-title {
-        width: 100%;
-        margin: 77px 0px 37px 0px;
-        text-align: center;
-        color: #333333;
-        font-size: 36px;
-        font-weight: bold;
-    }
-}
-
-@media screen and (min-width: 768px) {
     .course {
         width: 100%;
         height: auto;
@@ -1352,10 +1316,21 @@ body {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .course__title {
+        width: 100%;
+        margin: 77px 0px 37px 0px;
+        text-align: center;
+        color: #333333;
+        font-size: 36px;
+        font-weight: bold;
+    }
+}
+
 /* コース・目的 コンテンツ */
 /* PC記述 */
 @media screen and (min-width: 768px) {
-    .tab-list {
+    .tab__list {
         max-width: 1200px;
         display: flex;
         justify-content: center;
@@ -1366,7 +1341,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .tab-list-item {
+    .tab__list--item {
         width: 47%;
         padding: 2% 0px;
         display: flex;
@@ -1381,7 +1356,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .tab-contents-wrap {
+    .tab__contents--wrap {
         max-width: 1200px;
         margin: 0px auto;
         display: flex;
@@ -1390,7 +1365,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .tab-contents {
+    .tab__contents {
         width: 97%;
         background-color: #F2F9FF;
         display: none;
@@ -1398,7 +1373,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .tab-contents-half {
+    .tab__contents--half {
         display: flex;
         justify-content: center;
         gap: 3%;
@@ -1408,35 +1383,39 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .tab-icon {
+    .tab__icon {
         display: flex;
         flex-direction: column;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .tab-img {
+    .tab__img {
         width: 100%;
         border-radius: 10px;
         overflow: hidden;
     }
-    .tab-img img {
+    .tab__img img {
         width: 100%;
         border-radius: 10px;
         transition: all 0.5s ease-in-out;
     }
-    .tab-img img:hover {
+    .tab__img img:hover {
         transform: scale(1.2);
         opacity: 0.4;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .tab-text {
+    .tab__text {
         color: #333333;
         font-size: 2rem;
         font-weight: bold;
         margin-top: 4%;
+        transition: all 0.5s ease-in-out;
+    }
+    .tab__text:hover {
+        opacity: 0.4; 
     }
 }
 
@@ -1466,7 +1445,7 @@ body {
 /* 費用 タイトル */
 /* SP記述 */
 @media screen and (max-width: 767px) {
-    .cost-title {
+    .cost__title {
         text-align: center;
         margin: 68px 0px 20px 0px;
         color: #333333;
@@ -1478,7 +1457,7 @@ body {
 /* 費用 コンテンツ */
 /* SP記述 */
 @media screen and (max-width: 767px) {
-    .cost-box {
+    .cost__box {
         height: 451px;
         width: 100%;
         display: flex;
@@ -1493,7 +1472,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .cost-box th {
+    .cost__box th {
         background-color: #F5F5F5;
         color: #333333;
         font-size: 1.6rem;
@@ -1505,7 +1484,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .cost-box td {
+    .cost__box td {
         color: #333333;
         font-size: 1.6rem;
         text-align: center;
@@ -1516,7 +1495,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .cost-text-first {
+    .cost__text-first {
         color: #F23397;
         font-size: 2.8rem;
         font-weight: bold;
@@ -1527,7 +1506,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .cost-text-second {
+    .cost__text-second {
         color: #F23397;
         font-size: 1.6rem;
     }
@@ -1536,7 +1515,7 @@ body {
 /* 費用 タイトル */
 /* PC記述 */
 @media screen and (min-width: 768px) {
-    .cost-title {
+    .cost__title {
         text-align: center;
         margin: 75px 0px 35px 0px;
         color: #333333;
@@ -1548,7 +1527,7 @@ body {
 /* 費用 コンテンツ */
 /* PC記述 */
 @media screen and (min-width: 768px) {
-    .cost-box {
+    .cost__box {
         height: 545px;
         width: 100%;
         display: flex;
@@ -1571,7 +1550,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .cost-box th {
+    .cost__box th {
         background-color: #F5F5F5;
         color: #333333;
         font-size: 1.6rem;
@@ -1582,7 +1561,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .cost-box td {
+    .cost__box td {
         color: #333333;
         font-size: 1.8rem;
         text-align: center;
@@ -1593,7 +1572,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .cost-text-first {
+    .cost__text-first {
         color: #F23397;
         font-size: 2.8rem;
         letter-spacing: 0.08em;
@@ -1605,7 +1584,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .cost-text-second {
+    .cost__text-second {
         color: #F23397;
         font-size: 1.6rem;
     }
@@ -1623,26 +1602,26 @@ body {
 }
 
 @media screen and (max-width: 1079px) {
-    .faq-search-box {
+    .faq-search__box {
         width: 100vw;
         height: 100%;
         display: flex;
         position: relative;
         overflow: hidden;
     }
-    .faq-search-box img {
+    .faq-search__box img {
         width: 100vw;
         height: 100%;
         transition: all 0.5s ease-in-out;
     }
-    .faq-search-box img:hover {
+    .faq-search__box img:hover {
         transform: scale(1.2);
         opacity: 0.4;
     }
 }
 
 @media screen and (max-width: 1079px) {
-    .faq-search-box p {
+    .faq-search__box p {
         position: absolute;
         top: 45%;
         left: 5%;
@@ -1666,7 +1645,7 @@ body {
 }
 
 @media screen and (min-width: 1080px) {
-    .faq-search-box {
+    .faq-search__box {
         width: 100%;
         height: 100%;
         aspect-ratio: 3 / 1;
@@ -1674,20 +1653,20 @@ body {
         position: relative;
         overflow: hidden;
     }
-    .faq-search-box img {
+    .faq-search__box img {
         width: 100%;
         height: 100%;
         aspect-ratio: 3 / 1;
         transition: all 0.5s ease-in-out;
     }
-    .faq-search-box img:hover {
+    .faq-search__box img:hover {
         transform: scale(1.2);
         opacity: 0.4;
     }
 }
 
 @media screen and (min-width: 1080px) {
-    .fap-text {
+    .fap__text {
         position: absolute;
         top: 45%;
         left: 38%;
@@ -1698,7 +1677,7 @@ body {
 }
 
 @media screen and (min-width: 1080px) {
-    .search-text {
+    .search__text {
         position: absolute;
         top: 45%;
         left: 35%;
@@ -1734,7 +1713,7 @@ body {
     }
 }
 
-.footer-text {
+.footer__text {
     color: #333333;
     font-size: 13px;
 }
